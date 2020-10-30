@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Input datas</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <h1 >
+         Please fill in your inputs
+
+      </h1>
+      <br>
+      
+      <form action = "/prediction" method = "POST">
+        <p>Age <input type = "number" name = "input_text1" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Anaemia <input type = "number" name = "input_text2" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Creatinine_phosphokinase <input type = "number" name = "input_text3" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>diabetes <input type = "number" name = "input_text4" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>ejection_fraction <input type = "number" name = "input_text5" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>high_blood_pressure <input type = "number" name = "input_text6" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>platelets <input type = "number" name = "input_text7" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>serum_creatinine <input type = "number" name = "input_text8" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>serum_sodium <input type = "number" name = "input_text9" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>sex <input type = "number" name = "input_text10" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>smoking <input type = "number" name = "input_text11" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>time <input type = "number" name = "input_text12" style="font-size:18pt;height:120px;width:200px;"/></p> 
+        <p>AgeGroup <input type = "number" name = "input_text13" style="font-size:18pt;height:120px;width:200px;"/></p> 
+        <p>CreatinineGroup <input type = "number" name = "input_text14" style="font-size:18pt;height:120px;width:200px;"/></p>     
+        <p><input type = "submit" value = "GO" /></p>
+      </form>
+
+      
+
+      <button><a href="entrainement">Cliquez Ici pour voir le score</a></button>
+      
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+
+
+  </body>
+</html>
